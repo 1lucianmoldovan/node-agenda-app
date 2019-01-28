@@ -90,7 +90,7 @@ function doSearch(ev) {
 
     var filteredContacts = globalContacts.filter(function(contact) {
         console.log (contact.firstName, value)
-        return  contact.firstName == value;
+        return  contact.firstName.toLowerCase().includes(value.toLowerCase());
     });
 
 // sintaxa identica si la map, si la filter si la for.. etc. ↑
