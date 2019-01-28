@@ -71,6 +71,8 @@ function initEvents() {
             return contact.phone == phoneToEdit;
         });
 
+        searchAll = this.getAttribute('data-id');
+
         console.log('edit', phoneToEdit, contact);
         $('input[name=firstName').val(contact.firstName);
         $('input[name=lastName').val(contact.lastName);
@@ -78,12 +80,15 @@ function initEvents() {
     })
 }
 
-var numbers = [3, 4, 9, 12, 15, 19];
-
-var luckynumber = numbers.filter()
-
-
 // - start app
+
+document.getElementById('search').addEventListener('input', doSearch);
+
+function doSearch() { 
+    var value = this.value;
+    console.warn('please.... search', value);
+}
 
 loadContacts();
 initEvents();
+// searchAll();
