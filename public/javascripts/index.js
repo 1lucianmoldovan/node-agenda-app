@@ -84,9 +84,21 @@ function initEvents() {
 
 document.getElementById('search').addEventListener('input', doSearch);
 
-function doSearch() { 
+function doSearch(ev) { 
     var value = this.value;
-    console.warn('please.... search', value);
+
+
+    var filteredContacts = globalContacts.filter(function(contact) {
+        console.log (contact.firstName, value)
+        return  contact.firstName == value;
+    });
+
+// sintaxa identica si la map, si la filter si la for.. etc. ↑
+
+    // var filteredContacts = [];
+    // filteredContacts.push(globalContacts[0]); - linie ca exemplu, practic reda din global contacts, contactul de pe prima pozitie
+
+    displayContacts(filteredContacts);
 }
 
 loadContacts();
