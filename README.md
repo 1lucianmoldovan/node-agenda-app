@@ -4,7 +4,7 @@ A simple app using node & express for managing phone books
 
 ## Content
 
-- CRUD operations :
+- **CRUD** operations :
     - **C**reate new contact
     - **R**ead contacts from [contacts.json](public/contacts.json)
     - **U**pdate contacts
