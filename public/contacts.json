@@ -1,17 +1,17 @@
 [
-    {
-        "FirstName" : "Vasile",
-        "LastName" : "Popescu",
-        "PhoneNumber" : "0745669852"
-    },
-    {
-        "FirstName" : "Calin",
-        "LastName" : "Ionescu",
-        "PhoneNumber" : "0745854778"
-    },
-    {
-        "FirstName" : "Nicolae",
-        "LastName" : "Constantin",
-        "PhoneNumber" : "0745889632"
-    }
+  {
+    "firstName": "Vasile",
+    "lastName": "Popescu",
+    "phone": "0745669852"
+  },
+  {
+    "firstName": "Calin",
+    "lastName": "Ionescu",
+    "phone": "0745854778"
+  },
+  {
+    "firstName": "Nicolae",
+    "lastName": "Catalin ",
+    "phone": "0745224145"
+  }
 ]
