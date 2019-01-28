@@ -56,7 +56,7 @@ function displayContacts(contacts) {
             </tr>`
     });
 
-    console.warn('contacts', contacts);
+    // console.warn('contacts', contacts);
     // rows.push(getNewRow()); // simplified
     var actions = getNewRow();
     contacts.push(actions);
@@ -84,16 +84,18 @@ function initEvents() {
 
 document.getElementById('search').addEventListener('input', doSearch);
 
-function doSearch(ev) { 
+function doSearch(ev) {
     var value = this.value;
 
 
-    var filteredContacts = globalContacts.filter(function(contact) {
-        console.log (contact.firstName, value)
-        return  contact.firstName.toLowerCase().includes(value.toLowerCase());
+    var filteredContacts = globalContacts.filter(function (contact) {
+        console.log(contact.firstName, value)
+        return contact.firstName.toLowerCase().includes(value) ||
+        contact.lastName.toLowerCase().includes(value) ||
+        contact.phone.toLowerCase().includes(value);
     });
 
-// sintaxa identica si la map, si la filter si la for.. etc. ↑
+    // sintaxa identica si la map, si la filter si la for.. etc. ↑
 
     // var filteredContacts = [];
     // filteredContacts.push(globalContacts[0]); - linie ca exemplu, practic reda din global contacts, contactul de pe prima pozitie
